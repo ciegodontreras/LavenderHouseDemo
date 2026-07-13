@@ -46,10 +46,9 @@ nav a:hover {
 
 .sidebar {
     position: fixed;
-    top: 0;
-    right: 0;
+    top: 50px;
     height: 100vh;
-    width: 250px;
+    width: 100vw;
     z-index: 999;
     background-color: rgb(211, 170, 250);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
@@ -72,6 +71,37 @@ nav a:hover {
 
 /* menu bar toggle */
 
-@media screen {
-    
+.menu-icon, .close-icon {
+    display: none;
+    margin-left: auto;
 }
+
+@media(min-width: 800px) {
+    .hideOnDesktop {
+        display: none;
+    }
+}
+
+@media(max-width: 800px) {
+    .hideOnMobile{ 
+        display: none;
+    }    
+    .menu-icon {
+        display: block;
+    }
+}
+
+.hideMenuIcon {
+    display: none;
+}
+
+.showCloseIcon {
+    display: block;
+}
+
+@media(max-width: 800px) {
+    .hideOnDesktop {
+        display: none;
+    }
+}
+
