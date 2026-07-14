@@ -76,12 +76,6 @@ nav a:hover {
     margin-left: auto;
 }
 
-@media(min-width: 800px) {
-    .hideOnDesktop {
-        display: none;
-    }
-}
-
 @media(max-width: 800px) {
     .hideOnMobile{ 
         display: none;
@@ -99,9 +93,6 @@ nav a:hover {
     display: block;
 }
 
-@media(max-width: 800px) {
-    .hideOnDesktop {
-        display: none;
-    }
+.hideShowSideBar {
+    display: flex;
 }
-

@@ -1,17 +1,23 @@
 const menuIcon = document.querySelector('.menu-icon'); 
 const closeIcon = document.querySelector('.close-icon'); 
 const sideBar = document.querySelector('.sidebar');
-const windowWidth = document.querySelector('.mainContainer').offsetWidth; 
 
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 800) { 
+        sideBar.classList.remove('hideShowSideBar');  
+        closeIcon.classList.remove('showCloseIcon'); 
+        menuIcon.classList.remove('hideMenuIcon'); 
+    }
+})
 
 menuIcon.addEventListener('click', () => {
-    sideBar.style.display = 'flex'; 
+    sideBar.classList.toggle('hideShowSideBar');  
     closeIcon.classList.toggle('showCloseIcon'); 
     menuIcon.classList.toggle('hideMenuIcon'); 
 })
 
 closeIcon.addEventListener('click', () => {
-    sideBar.style.display = 'none'; 
+    sideBar.classList.toggle('hideShowSideBar');  
     closeIcon.classList.toggle('showCloseIcon'); 
     menuIcon.classList.toggle('hideMenuIcon');
 })
