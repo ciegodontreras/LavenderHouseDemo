@@ -5,7 +5,7 @@
 
 body {
     min-height: 100vh;
-    background-color: rgb(211, 170, 250);
+    background-color: #BEA6CE;
 }
 
 /* navigation bar */
@@ -33,7 +33,7 @@ nav a {
     padding: 0 7px;
     text-decoration: none;
     font-size: 1rem;
-    color: rgb(75, 34, 34);
+    color: #431519;
     display: flex;
     align-items: center;
 }
@@ -50,7 +50,7 @@ nav a:hover {
     height: 100vh;
     width: 100vw;
     z-index: 999;
-    background-color: rgb(211, 170, 250);
+    background-color: #BEA6CE;
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     list-style: none;
     display: none;
